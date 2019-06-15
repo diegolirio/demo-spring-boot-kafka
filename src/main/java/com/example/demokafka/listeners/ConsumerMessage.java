@@ -10,9 +10,9 @@ public class ConsumerMessage {
 
     private CountDownLatch latch = new CountDownLatch(3);
 
-    @KafkaListener(topics = "${message.topic.name}", groupId = "foo")
+    @KafkaListener(topics = "${message.topic.name}", groupId = "${group.myStudy}")
     public void listenGroupFoo(String message) {
-        System.out.println("Received Messasge in group 'foo': " + message);
+        System.out.println("Received Messasge in group 'myStudy': " + message);
         latch.countDown();
     }
 

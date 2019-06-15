@@ -20,7 +20,8 @@ public class KafkaConsumerConfig {
     @Value(value = "${kafka.bootstrapAddress}")
     private String bootstrapAddress;
 
-    private String groupId = "foo";
+    @Value("${group.myStudy}")
+    private String groupId;
 
     @Bean
     public ConsumerFactory<String, String> consumerFactory() {
