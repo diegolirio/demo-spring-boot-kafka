@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 import java.util.concurrent.CountDownLatch;
 
 @Component
-public class ConsumerMessage {
+public class OtherMicroserviceConsumerMessage {
 
     private CountDownLatch latch = new CountDownLatch(3);
 

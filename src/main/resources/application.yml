@@ -1,5 +1,5 @@
 kafka:
-  bootstrapAddress: localhost:9092 #ef62628a-6767-40fe-abb0-8fa22ca6c447.pub.cloud.scaleway.com:9092
+  bootstrapAddress: ef62628a-6767-40fe-abb0-8fa22ca6c447.pub.cloud.scaleway.com:9092
   messageTopicRequest: topic-request
   messageTopicReply:  topic-reply
   groupMyStudy: myStudy
