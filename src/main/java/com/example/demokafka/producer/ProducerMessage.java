@@ -11,7 +11,7 @@ public class ProducerMessage {
     @Autowired
     private KafkaTemplate<String, String> kafkaTemplate;
 
-    @Value("${message.topic.name}")
+    @Value("${kafka.messageTopicRequest}")
     private String topicName;
 
     public void sendMessage(String msg) {
